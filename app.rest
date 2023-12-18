@@ -1,0 +1,60 @@
+###
+
+GET http://localhost:3000/student
+
+###
+
+GET http://localhost:3000/student?name=John%20Doe
+
+
+###
+
+GET http://localhost:3000/student/1234567891
+
+
+###
+
+POST http://localhost:3000/student
+Content-Type: application/json
+
+{
+    "name": "John Doe 1",
+    "_id": "1234567891"
+}
+
+###
+DELETE http://localhost:3000/student/1234567891
+
+
+
+
+
+###
+
+GET http://localhost:3000/studentpost
+
+###
+
+GET http://localhost:3000/studentpost?title=title1
+
+
+###
+
+GET http://localhost:3000/studentpost/1234567890
+
+
+
+###
+
+POST http://localhost:3000/studentpost
+Content-Type: application/json
+
+{
+   "title": "title1",
+  "message": "message1",
+  "owner": "1234567890",
+  "_id": "1234567890"
+}
+
+###
+DELETE http://localhost:3000/studentpost/1234567890
